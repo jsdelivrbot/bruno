@@ -1,0 +1,7 @@
+// hidden so I can use a different button
+.live-edit-button {
+    @include button;
+    @extend .button--app;
+    box-shadow: none !important;
+    position: absolute !important;
+}

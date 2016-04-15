@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="{{ page.title }} light-trigger frontpage">
+
+{% include head/site-head.html %}
+
+<body>
+
+    {% include nav/trigger.html %}
+
+    {% include nav/nav.html %}
+
+ <div class="site-wrap clearfix">
+
+     <div class="flexslider">
+         <ul class="slides">
+             <li><img src="/img/banner-db.jpg" /></li>
+             <li><img src="/img/banner-el.jpg" /></li>
+         </ul>
+
+         <img src="/img/flex-bg.gif" />
+
+         <h1 class="site-title">
+             <span>Michael Story - Christchurch Bassist</span>
+             <svg class="branding">
+               <use xlink:href="/img/svg-defs.svg#shape-branding" />
+             </svg>
+
+         </h1>
+
+     </div>
+
+  	<div id="main" class="clearfix">
+
+	    {{ content }}
+
+    </div><!-- END #main -->
+
+    {% include footer/footer.html %}
+
+    <div class="overlay">
+
+    </div>
+
+</div><!-- END .page-wrap -->
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+/**
+* ### Colors
+* <span class="epsilon">ui/settings/type-settings.scss</span> <br>
+* these are the theme variables. note that these swatches are only part of the styleguide css
+*
+*     @example
+*     <div class="fw clearfix"><p>Theme Colors</p></div>
+*     <div class="swatch swatch-highlight">
+*     </div>
+*     <div class="swatch swatch-highlight--mute">
+*     </div>
+*     <div class="swatch swatch-base-color">
+*     </div>
+*     <div class="swatch swatch-base-color--mute">
+*     </div>
+*     <div class="swatch swatch-black">
+*     </div>
+*     <div class="swatch swatch-charcoal">
+*     </div>
+*     <div class="swatch swatch-blue">
+*     </div>
+*
+*/
+
+///
+///
+/// please put any new variables into the swatch
+/// collection at bottom of this file and declare in /documentation/settings/colors.html
+///
+///
+
+// MESSAGES
+
+$success-light: #91c53a;
+$success-dark: #60AB1B;
+
+$error-light: #D22525;
+$error-dark: #BD1111;
+
+$warning-light: #FEAE00;
+$warning-dark: #FD8B00;
+
+$info-light: #0096D8;
+$info-dark: #0066C6;
+
+
+// THEME COLORS
+
+
+$blue: #0094DE;
+
+$black: #25282D;
+$charcoal: #2E343A;
+$grey: #E3E3E3;
+$red: #D24734;
+$text-grey: #807B83;
+
+$base-text-color:   $text-grey;
+$base-background-color:	white;
+
+
+
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+
+
+// USEFUL VARIABLES
+
+$highlight: $red;
+
+$highlight--mute: $warning-light;
+
+$base-color: $base-text-color;
+
+$base-color--mute: $grey;
+
+
+// FORM ELEMENTS
+
+$placeholder: #aaa;
+
+// GRADIENTS
+
+//$ellipse-gradiant-outer: $dark-purple-rgba-trans;
+//$ellipse-gradiant-inner: $dark-purple-rgba;
+
+
+
+$colors: (
+
+	'highlight' : $highlight,
+
+	'highlight--mute' : $highlight--mute,
+
+	'base-color': $base-color,
+
+	'base-color--mute' : $base-color--mute,
+
+    'black' : $black,
+
+    'charcoal' : $charcoal,
+
+    'blue' : $blue,
+);

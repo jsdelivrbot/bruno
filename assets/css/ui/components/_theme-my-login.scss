@@ -1,0 +1,36 @@
+// remove the default wordpress css stuff
+.tml {
+    margin: 0 auto;
+
+    p, table {
+        margin-bottom: 0 !important;
+    }
+}
+
+// hide login form on the pending activation page so user can't try to login prior to activating via email
+body form[action="/login/?pending=activation"]  {
+    display: none;
+}
+
+// hide user profile bits that are default in wordpress when showing on the frontend
+.tml-user-admin-bar-front-wrap,
+//.tml-user-login-wrap,
+.tml-first-name-wrap,
+.tml-last-name-wrap,
+.tml-nickname-wrap,
+.tml-display-name-wrap,
+.tml-user-url-wrap,
+.tml-user-description-wrap,
+#your-profile h3
+ {
+    display: none;
+}
+
+// hide the edit profile form just so it can be revelled via JS
+#edit-settings {
+    display: none;
+}
+
+.tml .message, .tml .tml-rememberme-wrap, .tml .error {
+    margin-bottom: $spacing-unit !important;
+}

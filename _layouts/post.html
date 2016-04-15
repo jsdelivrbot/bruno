@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="{{ page.title }}">
+
+{% include head/site-head.html %}
+
+<body>
+
+    {% include nav/trigger.html %}
+
+    {% include nav/nav.html %}
+
+ <div class="site-wrap clearfix u-pt+">
+
+  	<div id="main" class="clearfix u-mb">
+
+	    {{ content }}
+
+    </div><!-- END #main -->
+
+    {% include footer/footer.html %}
+
+    <a href="/" class="button--ghost button--app button--tiny">back??</a>
+
+</div><!-- END .page-wrap -->
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+@if $trigger-horizontal-position == right {
+    $nav-text-align: right;
+}
+@else {
+    $nav-text-align: left;
+}
+
+/* Navigation Menu - Background */
+.nav {
+  /* critical sizing and position styles */
+  width: $push-site-wrap-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  #{$trigger-horizontal-position}: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  padding-top: $spacing-unit/1.2;
+
+
+  /* non-critical appearance styles */
+  list-style: none;
+  background: $black;
+
+
+  /* Navigation Menu - List items */
+  li {
+    /* non-critical appearance styles */
+    font-family: $heading-font;
+    @include font-size(16px, 1.7);
+    text-transform: uppercase;
+    width: 100%;
+    list-style: none;
+    text-align: $nav-text-align;
+
+    ul {
+        margin: 0;
+
+        li a {
+            padding-left: $spacing-unit*1.5;
+          }
+    }
+
+    &.active > a {
+        color: $highlight;
+    }
+
+    a {
+      /* non-critical appearance styles */
+      display: block;
+      padding: $spacing-unit/4 $spacing-unit;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s;
+
+        &:hover {
+          background: $blue;
+        }
+    }
+  }
+}

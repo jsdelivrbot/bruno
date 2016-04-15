@@ -1,0 +1,52 @@
+#moveablesearch {
+
+    float: none;
+    width: 100%;
+    max-width: 337px;
+    margin: 0 auto;
+
+    #searchelements {
+        margin: 0;
+        margin-top: $spacing-unit;
+        width: 100%;
+    }
+
+    .fsearchtable {
+        width: 100%;
+
+        td.inputcontainer, td.optionscontainer, td.searchcontainer, td.inputcontainer .isearch {
+            border: none;
+            background-color: $charcoal;
+        }
+
+        td.inputcontainer .isearch {
+            width: 100%;
+            font-size: inherit;
+            padding: 0 10px;
+        }
+
+        .endcontainer {
+            display: none;
+        }
+
+        .optionscontainer {
+            position: relative;
+            padding-right: 15px;
+
+            .fa {
+                position: absolute;
+                top: 33.333%;
+                right: 0;
+            }
+        }
+
+        .searchcontainer {
+            text-align: center;
+
+            a {
+                color: $blue;
+            }
+        }
+    }
+
+}

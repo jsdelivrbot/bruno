@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="{{ page.title }}">
+
+{% include head/site-head.html %}
+
+<body>
+
+    {% include nav/trigger.html %}
+
+    {% include nav/nav.html %}
+
+ <div class="site-wrap clearfix">
+
+     <header class="clearfix wrapper u-pt">
+         <a href="#" class="site-title-svg" ><img src="http://brunopress.infradoxxs.com/siteowner/logo/logo.png" />Brunopress</a>
+
+         <div id="moveablesearch" class="searchpos1 hidequickonsearch0">
+	<div class="searchbar">
+		<div id="searchelements" class="elementshiding0">
+			<div id="searchtips" class="searchtips0">
+				<a href="/help/search-tips">Search tips</a>
+			</div>
+			<table class="fsearchtable">
+			<tbody>
+			<tr>
+			<td class="inputcontainer">
+				<input type="hidden" id="lastsearchval" value="">
+				<input class="isearch" type="text" name="quicksearchtext" id="quicksearchtext" value="" autocomplete="off" placeholder="Search...">
+			</td>
+			<td class="optionscontainer" style="display: table-cell;">
+				<a href="#" id="optionsbutton">Filters <i class="fa fa-caret-down"></i></a>
+			</td>
+			<td class="searchcontainer">
+				<a id="linksearch" href="#"><i class="fa fa-search"></i></a>
+			</td>
+			<td class="endcontainer">
+				&nbsp;
+			</td>
+			</tr>
+			</tbody>
+			</table>
+			<div id="suggestionchkcontainer" class="sugchk_0 elementshiding0">
+				<input type="checkbox" id="ksuggestions"> Suggesties
+			</div>
+		</div>
+		<!--<div id="searchwithincontainer" class="within_2 withinevents_1_2 elementshiding0">
+		<ul>
+		<li class="showing within"><input type="radio" class="searchradio" name="searchstyle" value="0" checked=""> Opnieuw zoeken</li>
+		<li class="showing within"><input type="radio" class="searchradio" name="searchstyle" value="1"> In resultaat</li>
+		<li class="noshow within"><input type="checkbox" class="searchcheck" id="searchwithinchk"> In resultaat</li>
+		<li id="searcheventscontainer" class="showing events"><input type="checkbox" id="ksearchevents"> Zoeken in sets</li>
+		</ul>
+    </div>-->
+	</div>
+</div>
+
+
+     </header>
+
+
+  	<div id="main" class="clearfix u-mb">
+
+
+
+
+	    {{ content }}
+
+    </div><!-- END #main -->
+
+
+
+</div><!-- END .page-wrap -->
+
+</body>
+
+</html>

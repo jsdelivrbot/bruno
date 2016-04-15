@@ -1,0 +1,31 @@
+/**
+* ### Images
+* <span class="epsilon">ui/base/images.scss</span> <br>
+* all images are responsive, no classes needed
+*     @example
+*     <div class="alignleft u-mr0"><img src="http://placehold.it/1000x300" /></div>
+*
+*/
+
+$social-svg: false;
+
+img {
+    max-width: 100%; /* [1] */
+    font-style: italic; /* [2] */
+    vertical-align: middle; /* [3] */
+    height: auto;
+}
+
+@if($social-svg == true) {
+    .social svg {
+        width: 20%;
+        max-width: 90px;
+        max-height: 90px;
+        fill: $base-color;
+        @include vendor(transition, all 0.3s);
+
+        &:hover {
+            fill: $highlight--mute;
+        }
+    }
+}

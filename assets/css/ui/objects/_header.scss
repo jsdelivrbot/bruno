@@ -1,0 +1,19 @@
+/**
+* ### Header
+* <span class="epsilon">ui/objects/header.scss</span> <br>
+* The site header styles
+*
+*     @example
+*     <header class="wrapper text-center u-pt+ u-pb">
+*     <a href="#" class="site-title-svg"><img src="http://brunopress.infradoxxs.com/siteowner/logo/logo.png" /></a>
+*     </header>
+*
+*/
+
+header {
+    background: $black;
+    //@include vendor(background-size, cover);
+    //background: $base-color;
+    color: white;
+    //text-shadow: 0px 0px 170px black;
+}

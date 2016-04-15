@@ -1,0 +1,43 @@
+/**
+* ### Type Settings
+* <span class="epsilon">ui/settings/type-settings.scss</span> <br>
+* set your base font-size and line-height, heading sizes, font weight variables, font-family variables<br><br>
+* the `$base-font` is Opens Sans and `$heading-font` is Arial Narrow. Open Sans is Google Fonts<br>
+* `$base-font-size` 14px<br>
+* `$base-line-height` 29px<br>
+* `$heading-size-1`  52px;<br>
+* `$heading-size-2`  37px;<br>
+* `$heading-size-3`  24px;<br>
+* `$heading-size-4`  20px;<br>
+* `$heading-size-5`  16px;<br>
+* `$heading-size-6`  14px;<br>
+*/
+
+// High-level base settings.
+$base-font-size:          14px !default;
+$base-line-height:        29px !default;
+
+
+
+//
+//
+//		Type
+//
+//
+
+$heading-size-1:  34px;
+$heading-size-2:  28px;
+$heading-size-3:  24px;
+$heading-size-4:  20px;
+$heading-size-5:  16px;
+$heading-size-6:  12px;
+
+
+
+// FONT WEIGHTS
+
+
+// Font Family
+
+$base-font: 'Open Sans', sans-serif;
+$heading-font: 'Arial Narrow', Arial, sans-serif;
