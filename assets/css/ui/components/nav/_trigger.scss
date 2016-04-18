@@ -55,7 +55,7 @@ $push-trigger-width: $push-site-wrap-width; // change direction using - or + val
   //display: none;
 
   @include bp(full-nav) {
-    display: block;
+    display: none;
 }
 
   // for displaying a contasting button background ---- this is in the checked zone below too

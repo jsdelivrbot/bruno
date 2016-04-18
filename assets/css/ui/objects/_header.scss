@@ -16,4 +16,8 @@ header {
     //background: $base-color;
     color: white;
     //text-shadow: 0px 0px 170px black;
+
+    @include bp(full-nav) {
+        min-height: 150px;
+    }
 }

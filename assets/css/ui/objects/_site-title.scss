@@ -35,7 +35,9 @@
 
 	}
 
-
+    @include bp(full-nav) {
+        float: left;
+    }
 
 }
 

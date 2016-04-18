@@ -4796,7 +4796,8 @@ hr {
   transition: 0.3s;
   width: 150px;
   height: 45px;
-  display: block; }
+  display: block;
+  float: left; }
   .site-title-svg:hover {
     opacity: 0.6 !important; }
   .site-title-svg img, .site-title-svg a {
@@ -4889,7 +4890,8 @@ hr {
 */
 header {
   background: #25282D;
-  color: white; }
+  color: white;
+  min-height: 150px; }
 
 /**
 * ## Components
@@ -4922,7 +4924,7 @@ $span-ml: 2px;
   position: absolute;
   top: 16px;
   left: 7px;
-  display: block;
+  display: none;
   z-index: 6000;
   -ms-transition: 0.1s all;
   -webkit-transition: 0.1s all;
@@ -5095,13 +5097,13 @@ label[for="nav-trigger"] {
 
 .nav {
   /* set these to override the mobile nav */
-  right: 29px !important;
-  left: auto;
+  right: auto !important;
+  left: 0;
   bottom: auto;
   margin-bottom: 0 !important;
-  top: 61px;
+  top: 104px;
   position: absolute;
-  width: 700px;
+  width: 100%;
   -ms-transform: none !important;
   -webkit-transform: none !important;
   -moz-transform: none !important;
@@ -5111,12 +5113,12 @@ label[for="nav-trigger"] {
   -moz-translate: none !important;
   translate: none !important;
   padding: 0;
-  background: none;
-  text-align: right;
+  background: #2E343A;
+  text-align: left;
   overflow: visible;
   height: auto;
   z-index: 99;
-  padding-right: 136px; }
+  padding: 3px 29px; }
   .nav ul {
     margin: 0;
     padding: 0; }
@@ -5124,51 +5126,47 @@ label[for="nav-trigger"] {
     display: inline-block;
     position: relative;
     width: auto;
-    margin-right: 14.5px;
+    margin-right: 29px;
     -ms-transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     transition: 0.3s;
-    font-size: 14px;
-    font-size: 1rem;
-    line-height: 2.0714285714; }
+    font-size: 15px;
+    font-size: 1.0714285714rem;
+    line-height: 1.9333333333; }
     .nav li.active a {
-      font-weight: #25282D;
-      border-bottom: solid 2px white;
-      padding-bottom: 0.2em; }
+      color: #0094DE;
+      background: transparent; }
     .nav li a {
       border: none;
       padding: 0; }
       .nav li a:hover, .nav li a:active, .nav li a:focus {
-        color: #D24734;
-        border-bottom: solid 2px white;
-        padding-bottom: 0.2em; }
-  .nav .button--white {
+        color: #0094DE;
+        background: transparent; }
+  .nav #right {
     position: absolute;
-    top: -8px;
-    right: -29px;
-    font-size: 14px;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding-bottom: 0.3em !important; }
-
-.nav {
-  width: 900px;
-  right: 50% !important;
-  margin-right: -540px; }
-
-.nav li {
-  margin-right: 59px; }
+    top: -66px;
+    right: 0; }
+  .nav .controls {
+    position: absolute;
+    top: 4px;
+    right: 0; }
 
 #moveablesearch {
   float: none;
   width: 100%;
   max-width: 337px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  float: left;
+  margin-left: 29px;
+  max-width: 257px;
+  margin-left: 87px;
+  max-width: 330px; }
   #moveablesearch #searchelements {
     margin: 0;
     margin-top: 29px;
-    width: 100%; }
+    width: 100%;
+    margin-top: 7px; }
   #moveablesearch .fsearchtable {
     width: 100%; }
     #moveablesearch .fsearchtable td.inputcontainer, #moveablesearch .fsearchtable td.optionscontainer, #moveablesearch .fsearchtable td.searchcontainer, #moveablesearch .fsearchtable td.inputcontainer .isearch {
@@ -5178,6 +5176,8 @@ label[for="nav-trigger"] {
       width: 100%;
       font-size: inherit;
       padding: 0 10px; }
+    #moveablesearch .fsearchtable #optionsbutton {
+      font-size: inherit; }
     #moveablesearch .fsearchtable .endcontainer {
       display: none; }
     #moveablesearch .fsearchtable .optionscontainer {
