@@ -13,10 +13,10 @@ module.exports = function (grunt) {
         // shell commands for use in Grunt tasks
         shell: {
             jekyllBuild: {
-                command: 'jekyll build'
+                command: "jekyll build"
             },
             jekyllServe: {
-                command: "jekyll serve --baseurl ''"
+                command: "jekyll serve"
                 //command: 'jekyll serve'
             }
         },
@@ -28,27 +28,9 @@ module.exports = function (grunt) {
                     //'assets/js/scripts/jquery.fancybox.pack.js',
                     'assets/js/scripts/jquery.flexslider-min.js',
                     //'assets/js/scripts/typed.js',
-                    //'assets/js/scripts/jquery.fitvids.js',
                     'assets/js/scripts/main.js']
                 }
             }
-        },
-
-        // Configuration to be run (and then tested).
-        styledown: {
-            simple_css: {
-                files: {
-                    'styleguide/index.html': ['assets/css/style.css']
-                },
-
-                options: {
-                    sg_css: null,
-                    sg_js: null,
-                    config: 'styleguide/config.md'
-                },
-
-            },
-
         },
 
         svgmin: {
@@ -71,7 +53,7 @@ module.exports = function (grunt) {
         svgstore: {
             options: {
               prefix : 'shape-', // This will prefix each ID
-              //cleanup: ['fill', 'style'],
+              cleanup: ['fill', 'style'],
               includedemo: true,
               svg: {
                 //style: "display: none;",
@@ -97,14 +79,13 @@ module.exports = function (grunt) {
             },
 
             site: {
-         		files: ["*.md", "_layouts/*.html", "_posts/*.md", "_videos/*.html", "_music/*.html", "svg.html", "_includes/*.html", "_includes/**/*.html"],
-                tasks: ["shell:jekyllBuild"]
+         		files: ["*.html", "*.md", "_layouts/*.html", "_posts/*.md", "svg.html", "_includes/*.html"],
+         		tasks: ["shell:jekyllBuild"]
          	},
 
             sass: {
-                files: ['assets/css/**/*.{scss,sass}', 'styleguide/*.{scss,sass}'],
-
-                tasks: ['sass', 'styledown', 'shell:jekyllBuild']
+                files: ['assets/css/**/*.{scss,sass}'],
+                tasks: ['sass', 'shell:jekyllBuild']
             },
 
             svg: {
@@ -124,13 +105,13 @@ module.exports = function (grunt) {
         sass: {
 	        options: {
 	            sourceMap: true,
-                outputStyle: 'nested'
+                outputStyle: 'compressed'
 	        },
 	        dist: {
 	            files: {
 	                'assets/css/style.css' : 'assets/css/style.scss',
                     'assets/css/ie.css' : 'assets/css/ie.scss',
-                    'styleguide/styleguide.css' : 'styleguide/styleguide.scss'
+                    'assets/css/styleguide.css' : 'assets/css/styleguide.scss'
 	            }
 	        }
 	    },
@@ -138,11 +119,10 @@ module.exports = function (grunt) {
         // run tasks in parallel
         concurrent: {
             serve: [
-                //'sass',
+                'sass',
                 //'svgmin',
                 //'svgstore',
-                //'uglify',
-                //'styledown',
+                'uglify',
                 'watch',
                 'shell:jekyllServe'
             ],
