@@ -14,7 +14,13 @@
 *     p.subtitle this has a class of .subtitle
 *     p.text-truncate this has a class of .text-truncate Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.
 *     <p class="gamma"><a href="" class="word-wrap">Thisisasuperlongemailaddressthatneedstowrap@longlonglonglong.com</a><p>
-*
+*     p this is some overlay text on an image
+*     <div class="fw u-1/2-small-desk">
+*     <a href="#" class="secret-link"><img src="/img/stock.jpg"></a>
+*     <div class="overlay-text u-pr">
+*     <p class="block-heading u-mb-">Entertainment</p><h3 class="white-heading u-mb- big">Vestibulum Porta Aenean Ullam</h3>
+*     </div>
+*     </div>
 *
 *
 */
@@ -74,6 +80,13 @@ b, strong {
 .word-wrap {
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: $spacing-unit;
+    pointer-events: none;
 }
 
 /*

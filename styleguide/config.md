@@ -23,6 +23,6 @@
     .sg-content
         div(sg-content)
         .sg-copyright &copy; Your Copyright
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="styleguide.js"></script>
     <script src="../assets/js/script.miny.js"></script>

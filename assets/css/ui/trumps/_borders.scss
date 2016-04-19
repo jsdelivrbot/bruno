@@ -1,8 +1,40 @@
+/**
+* ### Borders
+* <span class="epsilon">ui/trumps/borders.scss</span> <br>
+* faux borders to show background through (these are only added on bp(small-desk)
+*
+*     @example
+*     <div style="background: red; float:left;"><div style="float: left;" class="faux-bl"><img src="http://placehold.it/100x100" /></div><div style="float: left;" class="faux-br"><img src="http://placehold.it/100x100" /></div> <div style="float: left;" class="faux-bt"><img src="http://placehold.it/100x100" /></div> <div style="float: left;" class="faux-bb"><img src="http://placehold.it/100x100" /></div></div>
+*
+*
+*/
+
+@include bp(small-desk) {
+
+
+    .faux-bl {
+        padding-left: 2px;
+    }
+
+    .faux-br {
+        padding-right: 2px;
+    }
+    .faux-bt {
+        padding-top: 2px;
+    }
+    .faux-bb {
+        padding-bottom: 2px;
+    }
+
+
+}
+
+/*
 .border-me {
     position: relative;
 
     &:after {
-        border-bottom: solid 1px $light-grey;
+        border-bottom: solid 1px $base-color;
         width: 75px;
         height: 1px;
         position: absolute;
@@ -16,7 +48,7 @@
     @include bp(portable) {
         &:after {
             border-bottom: none;
-            border-right: solid 1px $light-grey;
+            border-right: solid 1px $base-color;
             width: 1px;
             height: 80%;
             top: 0;
@@ -26,3 +58,17 @@
         }
     }
 }
+
+@include bp(full-nav) {
+
+    .u-bl {
+        border-left: solid 1px $black;
+
+    }
+
+    .u-bb {
+        border-bottom: solid 1px $black;
+
+    }
+}
+*/

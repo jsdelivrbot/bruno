@@ -16,6 +16,10 @@ img {
     height: auto;
 }
 
+.tiny-square-thumb {
+    max-width: 70px;
+}
+
 @if($social-svg == true) {
     .social svg {
         width: 20%;

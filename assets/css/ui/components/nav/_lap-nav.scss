@@ -19,7 +19,7 @@
         height: auto;
         z-index: 99;
         //padding-right: 136px;
-        padding: 3px $spacing-unit;
+        padding: 0;
 
         ul {
             margin: 0;
@@ -54,16 +54,64 @@
 
         }
 
+        #left {
+            li {
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+        }
+
         #right {
             position: absolute;
-            top: -66px;
+            top: -92px;
             right: 0;
         }
 
         .controls {
             position: absolute;
-            top: 4px;
+            top: -52px;
             right: 0;
+        }
+
+        .home {
+
+            background: $blue;
+            padding-left: $spacing-unit;
+            padding-right: $spacing-unit;
+            margin: 0;
+            margin-right: $spacing-unit;
+
+            a {
+                color: white !important;
+            }
+        }
+    }
+}
+
+@include bp(desk) {
+
+   .nav {
+
+        #right {
+            position: absolute;
+            top: -64px;
+            right: 220px;
+        }
+
+        .controls {
+            position: absolute;
+            top: -69px;
+            right: 0;
+        }
+
+        #left {
+            li {
+                margin-right: $spacing-unit*2;
+            }
+        }
+
+        .home {            
+            margin-right: $spacing-unit*2;
         }
     }
 }

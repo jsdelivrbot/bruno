@@ -8,6 +8,7 @@ $('.hamburger').click(function() {
 
 });
 
+/*
 $('.content-toggle').on('click',function(e){
     $('.toggled-content').hide();
     var currentAttrValue=jQuery(this).attr('href');
@@ -15,8 +16,8 @@ $('.content-toggle').on('click',function(e){
     //alert(currentAttrValue);
     e.preventDefault();
 });
-
-
+*/
+/*
 $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -28,13 +29,13 @@ $('a[href*="#"]:not([href="#"])').click(function() {
         return false;
       }
     }
-  });
-
+});*/
+/*
 $('.bio-toggle').click(function() {
     $('.slide-in-content').toggleClass('slide-in-content--show');
     e.preventDefault();
 });
-
+*/
 
 /*
 
@@ -58,9 +59,9 @@ $('.tab.active').show();
 
 */
 
-
+/*
 $(".video-container").fitVids();
-
+*/
 /*
 
     Progressive enhanced nav close
@@ -123,6 +124,13 @@ $('.flexslider').flexslider({
 animation: "fade"
 });
 */
+
+$('.flexslider').flexslider({
+  animation: "slide",
+  animationLoop: false,
+  itemWidth: 210,
+  itemMargin: 5
+});
 /*
 
     Fancybox

@@ -312,6 +312,16 @@
                 <a href="" class="word-wrap">Thisisasuperlongemailaddressthatneedstowrap@longlonglonglong.com</a>
               </p>
               <p></p>
+              <p>this is some overlay text on an image</p>
+              <div class="fw u-1/2-small-desk">
+                <a href="#" class="secret-link">
+                  <img src="/img/stock.jpg">
+                </a>
+                <div class="overlay-text u-pr">
+                  <p class="block-heading u-mb-">Entertainment</p>
+                  <h3 class="white-heading u-mb- big">Vestibulum Porta Aenean Ullam</h3>
+                </div>
+              </div>
             </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>this is
   <span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span>bold with b tag<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span>and this is
   <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>strong with strong tag<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
@@ -327,7 +337,17 @@
   nulla sed consectetur.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;gamma&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;word-wrap&quot;</span>&gt;</span>Thisisasuperlongemailaddressthatneedstowrap@longlonglonglong.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span></pre>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>this is some overlay text on an image<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fw u-1/2-small-desk&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;secret-link&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;/img/stock.jpg&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;overlay-text u-pr&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;block-heading u-mb-&quot;</span>&gt;</span>Entertainment<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;white-heading u-mb- big&quot;</span>&gt;</span>Vestibulum Porta Aenean Ullam<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
           </div>
         </section>
         <section class="sg-block sg-section-links">
@@ -336,14 +356,22 @@
             <p class="sg">
               <span class="epsilon sg">ui/base/links.scss</span>
               <br class="sg">general text links.
-              <code class="sg">.secret-link</code>inherits the color but hover effect is the same</p>
+              <code class="sg">.secret-link</code>inherits the color but hover effect is the same. Also image link effect on hover</p>
           </div>
           <div class="sg-example">
             <div class="sg-canvas">
               <a href="#">normal link</a>&#xA0;this is
               <a href="#" class="secret-link">secret hover me</a>
+              <p>hover over image below to get opacity effect</p>
+              <a href="#">
+                <img src="http://placehold.it/300x300">
+              </a>
             </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>normal link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>&amp;nbsp;this is
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;secret-link&quot;</span>&gt;</span>secret hover me<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;secret-link&quot;</span>&gt;</span>secret hover me<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>hover over image below to get opacity effect<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://placehold.it/300x300&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></pre>
           </div>
         </section>
         <section class="sg-block sg-section-images">
@@ -355,6 +383,23 @@
               <img src="http://placehold.it/1000x300" class="sg">
             </div>
           </p>
+        </section>
+        <section class="sg-block sg-section-backgrounds">
+          <div class="sg-text">
+            <h3 id="backgrounds" class="sg">Backgrounds</h3>
+            <p class="sg">
+              <span class="epsilon sg">ui/base/backgrounds.scss</span>
+              <br class="sg">set some helpful background classes.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="bg-mute" style="float:left;margin-bottom: 1em; padding: 1em; width: 100%;">.bg-mute</div>
+              <div class="bg-charcoal" style="float:left;margin-bottom: 1em; padding: 1em; width: 100%;">.bg-charcoal</div>
+              <div class="bg-black" style="float:left;margin-bottom: 1em; padding: 1em; width: 100%;">.bg-black</div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bg-mute&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float:left;margin-bottom: 1em; padding: 1em; width: 100%;&quot;</span>&gt;</span>.bg-mute<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bg-charcoal&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float:left;margin-bottom: 1em; padding: 1em; width: 100%;&quot;</span>&gt;</span>.bg-charcoal<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bg-black&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float:left;margin-bottom: 1em; padding: 1em; width: 100%;&quot;</span>&gt;</span>.bg-black<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
         </section>
         <section class="sg-block sg-section-misc-elements">
           <div class="sg-text">
@@ -382,6 +427,19 @@
       <section class="sg-section sg-section-objects">
         <h2 id="objects" class="sg">Objects</h2>
         <p class="sg">not quite components</p>
+        <section class="sg-block sg-section-layout">
+          <h3 id="layout" class="sg">Layout</h3>
+          <p class="sg">
+            <span class="epsilon sg">ui/objects/layout.scss</span>
+            <br class="sg">The inuitcss layout system uses
+            <code class="sg">box-sizing: border-box;</code>and
+            <code class="sg">display: inline-block;</code>to create an extremely powerful, flexible alternative to the traditional grid system. Combine the layout items with the widths found in
+            <code class="sg">trumps.widths</code>.
+            <code class="sg">.layout</code>is the container and
+            <code class="sg">.layout__item</code>is the grid elements. Just add
+            <code class="sg">.u-1/2</code>to the
+            <code class="sg">.layout__item</code>!!MAKE SURE WHITE SPACE IS CLEARED</p>
+        </section>
         <section class="sg-block sg-section-buttons">
           <div class="sg-text">
             <h3 id="buttons" class="sg">Buttons</h3>
@@ -450,12 +508,61 @@
         <p class="sg">Add paddings.</p>
         <p class="sg">Add large paddings.</p>
         <p class="sg">Remove paddings.</p>
+        <p class="sg">Margin and padding helper classes. Use these to tweak layout on a micro level.
+        </p>
+        <p class="sg">
+          <code class="sg">.(m|p)(t|r|b|l|h|v)(-|+|0) {}</code>= margin/padding top/right/bottom/left/horizontal/vertical less/more/none</p>
+        <p class="sg">Add small margins.</p>
+        <p class="sg">Margin helper classes.</p>
+        <p class="sg">Add margins.</p>
+        <p class="sg">Remove margins.</p>
+        <p class="sg">Padding helper classes.</p>
+        <p class="sg">Add paddings.</p>
+        <section class="sg-block sg-section-borders">
+          <div class="sg-text">
+            <h3 id="borders" class="sg">Borders</h3>
+            <p class="sg">
+              <span class="epsilon sg">ui/trumps/borders.scss</span>
+              <br class="sg">faux borders to show background through (these are only added on bp(small-desk)</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div style="background: red; float:left;">
+                <div style="float: left;" class="faux-bl">
+                  <img src="http://placehold.it/100x100">
+                </div>
+                <div style="float: left;" class="faux-br">
+                  <img src="http://placehold.it/100x100">
+                </div>
+                <div style="float: left;" class="faux-bt">
+                  <img src="http://placehold.it/100x100">
+                </div>
+                <div style="float: left;" class="faux-bb">
+                  <img src="http://placehold.it/100x100">
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background: red; float:left;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float: left;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;faux-bl&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://placehold.it/100x100&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float: left;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;faux-br&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://placehold.it/100x100&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float: left;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;faux-bt&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://placehold.it/100x100&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;float: left;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;faux-bb&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://placehold.it/100x100&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
 
       </div>
     </div>
     <div class="sg-copyright">&#xA9; Your Copyright</div>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="styleguide.js"></script>
   <script src="../assets/js/script.miny.js"></script>
 </body>

@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                 files: {
                 'assets/js/script.miny.js': [
                     //'assets/js/scripts/jquery.fancybox.pack.js',
-                    //'assets/js/scripts/jquery.flexslider-min.js',
+                    'assets/js/scripts/jquery.flexslider-min.js',
                     //'assets/js/scripts/typed.js',
                     //'assets/js/scripts/jquery.fitvids.js',
                     'assets/js/scripts/main.js']

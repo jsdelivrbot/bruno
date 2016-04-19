@@ -69,7 +69,8 @@ $inuit-use-fractions: true !default;
 // Predefine this Map to override.
 $inuit-widths-columns: (
     1,
-    2
+    2,
+    3
 ) !default;
 
 @include inuit-widths($inuit-widths-columns);
