@@ -9,8 +9,9 @@
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-    <script src="https://use.typekit.net/lno5hif.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="styleguide.css">
     <link rel="stylesheet" href="../assets/css/style.css">

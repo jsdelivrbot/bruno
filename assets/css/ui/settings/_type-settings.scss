@@ -2,7 +2,7 @@
 * ### Type Settings
 * <span class="epsilon">ui/settings/type-settings.scss</span> <br>
 * set your base font-size and line-height, heading sizes, font weight variables, font-family variables<br><br>
-* the `$base-font` is Opens Sans and `$heading-font` is Arial Narrow. Open Sans is Google Fonts<br>
+* the `$base-font` is Opens Sans and `$heading-font` is 'Roboto Condensed'. Both from Google Fonts<br>
 * `$base-font-size` 14px<br>
 * `$base-line-height` 29px<br>
 * `$heading-size-1`  52px;<br>
@@ -40,4 +40,4 @@ $heading-size-6:  12px;
 // Font Family
 
 $base-font: 'Open Sans', sans-serif;
-$heading-font: 'Arial Narrow', Arial, sans-serif;
+$heading-font: 'Roboto Condensed', sans-serif;
