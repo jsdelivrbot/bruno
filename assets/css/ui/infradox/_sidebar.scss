@@ -1,0 +1,32 @@
+#sidebar {
+    padding: 10px;
+}
+
+.musearch, .fyearinput {
+    width: 100% !important;
+}
+
+.musearchbox {
+    position: relative;
+}
+
+#musearchgo {
+    position: absolute;
+    bottom:-$spacing-unit/2;
+    left: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.arrowicon {
+    margin-top: 12px !important;
+}
+
+.oricheckboxes {
+    input {
+        vertical-align: top;
+    }
+}
+#sidebaradvanced #recentsearcheslist li {
+    margin-left: 0;
+}

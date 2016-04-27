@@ -1,0 +1,148 @@
+// GLOBAL PADDING AND MARGINS
+
+.colorbuttons, .previewtools, #preview #contentwrapper .colorbuttons .button, #keywordslist, .innertubebottom, #gallerybar ul, #sidebar .topbar, #gallerybar, .navbar ul, .gridModeBox ul, #sidebaradvanced, #sidebaradvanced ul, .topbar ul, #lightboxtoolbar ul, #carttoolbar ul {
+    margin: 0 !important;
+}
+
+#searchresults {
+    padding: $spacing-unit;
+}
+
+.topbar, .navbar, #lightboxtoolbar, #carttoolbar {
+    padding: $spacing-unit/4 $spacing-unit;
+}
+
+.paginationbar_pos2 {
+    margin-top: 0 !important;
+}
+
+.innertubebottom, #sidebar .topbar {
+    padding: 0 !important;
+}
+
+#lightboxtooltab, #carttooltab, .arrowbox {
+    padding-top: 0 !important;
+}
+
+#newkeywords {
+    margin-left: 0;
+}
+
+// page wrapper padding and margins
+
+.innertubetop, .innertubemiddle, .bottomcontainer {
+    margin-left: 0 !important;
+    padding-left: $spacing-unit !important;
+    padding-right: $spacing-unit !important;
+    margin-right: 0 !important;
+}
+
+// Global widths
+
+#pagewrapper {
+    min-width: auto !important;
+}
+
+.newkeywordsbox .colorbuttons, #preview .innertubemiddle, .previewtools, #gallerybar, #sidebaradvanced {
+    float: left;
+    width: 100%;
+}
+
+// Global heights
+
+.navbar, .itemsperpage, ul.oricheckboxes li {
+    height: auto;
+}
+
+// backgrounds
+
+.tspaginationbar, #paginatefilescontainer .paginatefilesbox, .dummy, .panelbackground, #preview .previewbox, #paginatefilescontainer {
+    background: $charcoal !important;
+}
+
+.pagthmb, #lightboxtoolbar, #carttoolbar {
+    background-color: $charcoal !important;
+}
+
+#lightboxtoolbar li {
+    color: white;
+}
+
+#sidebar, .navbar, .topbar {
+    background: $base-color--mute;
+    color: $charcoal;
+}
+
+.toolsdialogbox, #modalloginbox {
+    background: white;
+}
+
+
+// borders
+
+.dummy, .pagthmb {
+    border: none !important;
+}
+
+#sidebar {
+    border-right: solid 1px #ccc;
+}
+
+.fyearinput {
+    border: solid 1px #ccc;
+}
+
+// hide mobile
+
+
+// type
+
+#gallerybar li a, #contentwrapper, .topbar{
+    font-size: 1em !important;
+}
+
+#lightboxtoolbar li, #carttoolbar li {
+    font-size: 0.9em !important;
+}
+
+// inputs
+
+#lightboxtoolbar li input, #carttoolbar li input {
+    color: $base-color;
+}
+
+
+// buttons
+
+ul.colorbuttons a.button, #musearchgo {
+    background: $blue;
+    display: inherit;
+    float: inherit;
+    height: auto;
+    margin-right:  inherit;
+    padding:  5px 18px;
+    text-decoration:  inherit;
+    color:  inherit;
+    font-size:  16px;
+    font-weight:  inherit;
+    cursor:  inherit;
+    border-radius: $radius;
+    color: white;
+    cursor: pointer;
+    @include vendor(transition, 0.3s all);
+
+    @include attention {
+		text-decoration: none;
+		background-color: $highlight--mute;
+		border-color: $highlight--mute;
+		color:  white;
+	}
+
+    span {
+    background: none;
+    display: inline;
+    line-height: auto;
+    padding: 0;
+    color: #fff;
+    }
+}

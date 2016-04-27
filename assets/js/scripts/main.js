@@ -8,6 +8,16 @@ $('.hamburger').click(function() {
 
 });
 
+// move search filter in the header search box before the nav
+$( "#searchoptionsbox" ).insertBefore( ".nav" );
+
+// move the dropdown menu actually after the parent! Far out!!
+$( "div.lmenu_5" ).insertAfter( "#menu_5" );
+
+// move the navbarbottom out of the searchresults
+$( "#botnavbar" ).insertAfter( "#searchresults" );
+
+
 /*
 $('.content-toggle').on('click',function(e){
     $('.toggled-content').hide();

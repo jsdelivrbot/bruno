@@ -1,4 +1,25 @@
 
+@mixin input {
+    background: white;
+    border: none;
+    border-radius: $radius;
+    padding: 0.8em $spacing-unit/2 0.7em !important; // added !important to override the default acf-form style
+    width: 100%;
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    @extend %margin-bottom;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sidebar input[type="text"] {
+    border-radius: $radius;
+    padding: 0.8em $spacing-unit/2 0.7em !important;
+    height: auto;
+}
+
 .plankton-form {
 
     label {
@@ -17,18 +38,7 @@
 
     // tagging is used for the tag js plugin, so is .chosen-container for chosen plugin
     input[type="username"], input[type="text"], input[type="password"], input[type="email"], textarea, .chosen-container {
-    	background: white;
-    	border: none;
-    	border-radius: $radius;
-    	padding: 0.8em $spacing-unit/2 0.7em !important; // added !important to override the default acf-form style
-    	width: 100%;
-    	-webkit-appearance: none;
-    	font-family: inherit;
-    	font-size: inherit;
-    	color: inherit;
-    	@extend %margin-bottom;
-        display: inline-block;
-        vertical-align: middle;
+    	@include input;
 
     	&::-webkit-input-placeholder { /* WebKit browsers */
         color:    $base-color;

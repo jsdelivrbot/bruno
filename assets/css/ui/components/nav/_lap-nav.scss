@@ -85,6 +85,30 @@
                 color: white !important;
             }
         }
+
+        &.logged-in {
+
+            #right {
+                position: absolute;
+                top: -64px;
+                right: 0;
+            }
+
+            .user-menu {
+                position: absolute;
+                top: -94px;
+                right: 0;
+            }
+
+        }
+
+        .dropdownmenu {
+            min-width: 300px;
+        }
+
+        #right .dropdownmenu {
+            min-width: 150px;
+        }
     }
 }
 
@@ -110,8 +134,25 @@
             }
         }
 
-        .home {            
+        .home {
             margin-right: $spacing-unit*2;
         }
+
+        &.logged-in {
+
+            #right {
+                position: absolute;
+                top: -64px;
+                right: 0;
+            }
+
+            .user-menu {
+                position: absolute;
+                top: -94px;
+                right: 0;
+            }
+
+        }
     }
+
 }

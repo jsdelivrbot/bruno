@@ -2,13 +2,17 @@
 
     float: none;
     width: 100%;
-    max-width: 337px;
+    max-width: 338px; // also set below in filterbox
     margin: 0 auto;
+
+    .searchbar {
+        float: none;
+    }
 
     @include bp(full-nav) {
         float: left;
         margin-left: $spacing-unit;
-        max-width: 257px;
+        max-width: 258px;
     }
 
     @include bp(small-desk) {
@@ -20,6 +24,7 @@
         margin: 0;
         margin-top: $spacing-unit;
         width: 100%;
+        float: left;
 
         @include bp(full-nav) {
             margin-top: 7px;
@@ -42,6 +47,7 @@
 
         #optionsbutton {
             font-size: inherit;
+            background: transparent;
         }
 
         .endcontainer {
@@ -66,6 +72,56 @@
                 color: $blue;
             }
         }
+    }
+}
+
+// the search filters box
+
+#searchoptionsbox {
+    left: 50% !important;
+    margin-left: -169px !important;
+    width: 100% !important;
+    max-width: 338px !important;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    z-index: 999;
+    background: $charcoal;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.05);
+
+    @include bp(full-nav) {
+        max-width: 258px !important;
+        left: 208px !important;
+        margin-left: 0 !important;
+    }
+
+    @include bp(small-desk) {
+        max-width: 330px !important;
+        left: 266px !important;
+    }
+
+    li {
+        color: white;
+        font-weight: inherit !important;
+        font-size: 90% !important;
+    }
+
+    ul {
+        margin-left: 0;
+
+        li ul {
+            margin: 0px 0 6px 0;
+            width: 100%;
+
+            li {
+                padding: 2px 0 0 16px;
+                margin-left: 0;
+                width: 50%;
+            }
+        }
+
     }
 
 }

@@ -1,0 +1,50 @@
+#preview #main {
+    padding-top: $spacing-unit;
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.previewboxcontainer {
+    width: 100% !important;
+    margin-right: 0 !important;
+
+    @include bp(full-nav) {
+        max-width: 50%;
+    }
+}
+
+#preview .metadata {
+    width: 100% !important;
+    padding: 0;
+
+    @include bp(full-nav) {
+        max-width: 50%;
+        padding-left: $spacing-unit;
+    }
+}
+
+
+.previewtools {
+    margin-bottom: $spacing-unit !important;
+
+    a {
+        height: 20px;
+        line-height: 20px;
+    }
+
+    li {
+        margin-bottom: $spacing-unit/2;
+    }
+
+}
+
+#preview .newkeywordsbox {
+    padding: $spacing-unit;
+    width: 100%;
+}
+
+.tspaginationbar {
+    height: auto !important;
+}
